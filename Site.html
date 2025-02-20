@@ -10,7 +10,7 @@
             padding: 0;
             text-align: center;
             background-color: #f4f4f4;
-        }
+            }
         header {
             background-color: #333;
             color: white;
@@ -19,45 +19,87 @@
             }
         section {
             padding: 20px;
+            }
+        .about {
+            width: 82%;
+            max-width: 2400px; /* Mesmo valor da .dashboard */
+            margin: 0 auto; /* Centraliza na tela */
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+        .about-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .profile-photo{
+            width: 300px;  /* Ajuste o tamanho da imagem */
+            height: 300px;
+            border-radius: 50%; /* Deixa a imagem redonda */
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .about-text h2 {
+            font-size: 50px; /* Aumenta o título */
+            font-weight: bold;
+            margin-bottom: 15px;
+            flex: 1; /* Faz o texto ocupar o espaço restante */
+            text-align: left;
+        }
+        .about-text p {
+        font-size: 25px; /* Aumenta o texto do sobre mim */
+        line-height: 1.6; /* Melhora o espaçamento entre linhas */
+        flex: 1; /* Faz o texto ocupar o espaço restante */
+            text-align: left;
+        }
+
         .portfolio {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
+
+            }
         .dashboard {
             background: white;
             padding: 15px;
             margin: 10px;
-            width: 80%;
-            max-width: 1100px;
+            width: 85%;
+            max-width: 2400px;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
+            }
         .social-icons {
             margin-top: 20px;
-        }
+            }
         .social-icons a {
             margin: 0 10px;
             display: inline-block;
-        }
+            }
         .social-icons img {
-            width: 40px;
-            height: 40px;
-        }
+            width: 55px;
+            height: 55px;
+            }
     </style>
 </head>
 <body>
     <header>Istvan Abner de Lima Varga</header>
     
-    <section>
-        <h2>Sobre Mim 🧩</h2>
-        <p>Sou recém formado em ciências econômicas e apaixonado por tecnologia. Atualmente, estou buscando novas oportunidades no mercado de trabalho. Tenho mais de dois anos de experiência interativa com controle e análise de fluxo de caixa, conciliação bancária e contábil e controle de contas a pagar.
-        Além disso, tenho o prazer de compartilhar meus conhecimentos financeiros com outras pessoas, acredito que a educação financeira é uma ferramenta essencial para capacitar indivíduos a tomar decisões conscientes e responsáveis em relação ao seu dinheiro, promovendo uma maior estabilidade e segurança financeira para todos.</p>
+    <section class="about">
+        <div class="about-container">
+        <img src="Imagens/me.png" alt="Minha Foto" class="profile-photo">
+        <div class="about-text">
+            <h1>Sobre Mim 🧩</h1>
+            <p>Sou recém formado em ciências econômicas e apaixonado por tecnologia. Atualmente, estou buscando novas oportunidades no mercado de trabalho. Tenho mais de dois anos de experiência interativa com controle e análise de fluxo de caixa, conciliação bancária e contábil e controle de contas a pagar.
+            Além disso, tenho o prazer de compartilhar meus conhecimentos financeiros com outras pessoas, acredito que a educação financeira é uma ferramenta essencial para capacitar indivíduos a tomar decisões conscientes e responsáveis em relação ao seu dinheiro, promovendo uma maior estabilidade e segurança financeira para todos.</p>
+            <div class="social-icons">
+                <a href="https://github.com/Istvan-Abner-Varga" target="_blank"><img src="Imagens\github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/istvan-abner-varga/" target="_blank"><img src="Imagens\linkedin.png" alt="LinkedIn"></a>
+                <a href="mailto:istvan.a.varga@gmail.com"><img src="Imagens\email.png" alt="E-mail"></a>
+            </div>
+        </div>
+    </div>
     </section>
     
    <section class="portfolio">
@@ -80,9 +122,9 @@
     </section>
     
     <section class="social-icons">
-        <a href="https://github.com/Istvan-Abner-Varga" target="_blank"><img src="github.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/istvan-abner-varga/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-        <a href="mailto:istvan.a.varga@gmail.com"><img src="email.png" alt="E-mail"></a>
+        <a href="https://github.com/Istvan-Abner-Varga" target="_blank"><img src="Imagens\github.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/istvan-abner-varga/" target="_blank"><img src="Imagens\linkedin.png" alt="LinkedIn"></a>
+        <a href="mailto:istvan.a.varga@gmail.com"><img src="Imagens\email.png" alt="E-mail"></a>
     </section>
 </body>
 </html>
