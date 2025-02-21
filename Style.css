@@ -1,0 +1,147 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+            }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            }
+        section {
+            padding: 20px;
+            }
+        .about {
+            width: 82%;
+            max-width: 2400px; /* Mesmo valor da .dashboard */
+            margin: 0 auto; /* Centraliza na tela */
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .profile-photo{
+            width: 250px;  /* Ajuste o tamanho da imagem */
+            height: 250px;
+            border-radius: 50%; /* Deixa a imagem redonda */
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .about-text {
+            flex: 1; /* Ocupa o espaço disponível */
+            text-align: left; /* Alinha o texto à esquerda */
+            font-size: 30px; /* Aumenta o título */
+        }
+        .about-text h2 {
+            font-weight: bold;
+            margin-bottom: 15px;
+            flex: 1; /* Faz o texto ocupar o espaço restante */
+            text-align: left;
+        }
+        .about-text p {
+        font-size: 20px; /* Aumenta o texto do sobre mim */
+        line-height: 1.6; /* Melhora o espaçamento entre linhas */
+        flex: 1; /* Faz o texto ocupar o espaço restante */
+            text-align: left;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            }
+        .dashboard {
+            background: gray;
+            padding: 15px;
+            margin: 10px;
+            width: 90%;
+            max-width: 2400px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+        .slider-container {
+            position: relative;
+            width: 90%;
+            max-width: 1610px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide {
+            display: none; /* Esconde os slides */
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        iframe {
+            width: 60%;
+            height: 650px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .description {
+            width: 35%;
+            text-align: left;
+        }
+
+        .full-screen-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .full-screen-button:hover {
+            background-color: #555;
+        }
+
+        .prev, .next {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            font-size: 24px;
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .prev { left: 0; }
+        .next { right: 0; }
+
+        .social-icons {
+            margin-top: 20px;
+            }
+        .social-icons a {
+            margin: 0 10px;
+            display: inline;
+            }
+        .social-icons img {
+            width: 45px;
+            height: 45px;
+            }

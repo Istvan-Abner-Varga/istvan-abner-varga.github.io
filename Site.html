@@ -3,95 +3,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-            }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-            }
-        section {
-            padding: 20px;
-            }
-        .about {
-            width: 82%;
-            max-width: 2400px; /* Mesmo valor da .dashboard */
-            margin: 0 auto; /* Centraliza na tela */
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .about-container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .profile-photo{
-            width: 300px;  /* Ajuste o tamanho da imagem */
-            height: 300px;
-            border-radius: 50%; /* Deixa a imagem redonda */
-            object-fit: cover;
-            margin-right: 20px;
-        }
-        .about-text h2 {
-            font-size: 50px; /* Aumenta o título */
-            font-weight: bold;
-            margin-bottom: 15px;
-            flex: 1; /* Faz o texto ocupar o espaço restante */
-            text-align: left;
-        }
-        .about-text p {
-        font-size: 25px; /* Aumenta o texto do sobre mim */
-        line-height: 1.6; /* Melhora o espaçamento entre linhas */
-        flex: 1; /* Faz o texto ocupar o espaço restante */
-            text-align: left;
-        }
-
-        .portfolio {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            }
-        .dashboard {
-            background: white;
-            padding: 15px;
-            margin: 10px;
-            width: 85%;
-            max-width: 2400px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            }
-        .social-icons {
-            margin-top: 20px;
-            }
-        .social-icons a {
-            margin: 0 10px;
-            display: inline-block;
-            }
-        .social-icons img {
-            width: 55px;
-            height: 55px;
-            }
-    </style>
+    <link rel="stylesheet" href="Style.css"> <!-- Link para o CSS -->
 </head>
 <body>
-    <header>Istvan Abner de Lima Varga</header>
+    <header>Olá! meu nome é Istvan Varga</header>
     
     <section class="about">
         <div class="about-container">
         <img src="Imagens/me.png" alt="Minha Foto" class="profile-photo">
         <div class="about-text">
             <h1>Sobre Mim 🧩</h1>
-            <p>Sou recém formado em ciências econômicas e apaixonado por tecnologia. Atualmente, estou buscando novas oportunidades no mercado de trabalho. Tenho mais de dois anos de experiência interativa com controle e análise de fluxo de caixa, conciliação bancária e contábil e controle de contas a pagar.
+            <p>Sou recém formado em ciências econômicas e apaixonado por tecnologia. Atualmente, tenho me aperfeiçoado no uso de Power BI para análise de dados. 
+            Tenho mais de dois anos de experiência interativa com controle e análise de fluxo de caixa, conciliação bancária e contábil e controle de contas a pagar.
             Além disso, tenho o prazer de compartilhar meus conhecimentos financeiros com outras pessoas, acredito que a educação financeira é uma ferramenta essencial para capacitar indivíduos a tomar decisões conscientes e responsáveis em relação ao seu dinheiro, promovendo uma maior estabilidade e segurança financeira para todos.</p>
             <div class="social-icons">
                 <a href="https://github.com/Istvan-Abner-Varga" target="_blank"><img src="Imagens\github.png" alt="GitHub"></a>
@@ -103,28 +26,52 @@
     </section>
     
    <section class="portfolio">
-        <h2>Meu Portfólio 📊</h2>
-        <div class="dashboard">
-            <h3>Análise Financeira</h3>
-            <iframe title="Fluxo de Caixa" width="1024" height="636" src="https://app.powerbi.com/view?r=eyJrIjoiMzUzZDM5MzktZjM4Mi00ZTQyLTk0NGMtZDk0MzE5NTc2MmJmIiwidCI6ImFjNTU4MzUwLTJiZTQtNGNmYi1iMWIzLTY2YTQzZGI3YmU1OSJ9" frameborder="0" allowFullScreen="true"></iframe>
-            <p>Breve descrição sobre o primeiro dashboard.</p>
+    <div class="slider-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="slide">
+            <iframe title="Fluxo de Caixa" width="1100" height="650" src="https://app.powerbi.com/view?r=eyJrIjoiODkzOTc2YjctMGU1Yi00OWU4LThmOGQtNDk0OGMzZjg2YWE3IiwidCI6ImFjNTU4MzUwLTJiZTQtNGNmYi1iMWIzLTY2YTQzZGI3YmU1OSJ9" frameborder="0" allowFullScreen="true"></iframe>
+            <div class="description">
+                <h3>Análise do Fluxo de Caixa</h3>
+                <p>Esse Dashboard apresenta a análise de um fluxo de caixa durante o periodo de 2023 e 2024 de uma empresa. Demonstra a importancia da análise de dados para auxiliar na tomada de decisão dos gestores</p>
+                <p>✔️ Análise das receitas e despesas da empresa ao longo dos meses;</p>
+                <p>✔️ Análise dos extratos bancários;</p>
+                <p>✔️ Permite identificar os tipos de despesas que mais impactam na saude finaceira da empresa;</p>
+                <p>✔️ Permite a visualização dos saldos Acumulado e Operacional durante os meses;
+                </p>
+                <p>✔️ Análise do fluxo de caixa direto no Dashboard (Clicar em "Matriz").</p>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiODkzOTc2YjctMGU1Yi00OWU4LThmOGQtNDk0OGMzZjg2YWE3IiwidCI6ImFjNTU4MzUwLTJiZTQtNGNmYi1iMWIzLTY2YTQzZGI3YmU1OSJ9" class="full-screen-button" target="_blank">🔍 Ver em tela cheia</a>
+            </div>
         </div>
-        <div class="dashboard">
-            <h3>Análise Balaço Patrimonial</h3>
-            <iframe title="Balaço Patrimonial" width="1024" height="636" src="https://app.powerbi.com/view?r=eyJrIjoiNjdkNmRmZTMtYzFlNC00ZmI3LTk5MWQtZDY2NGRkYjAzYjIwIiwidCI6ImFjNTU4MzUwLTJiZTQtNGNmYi1iMWIzLTY2YTQzZGI3YmU1OSJ9" frameborder="0" allowFullScreen="true"></iframe>
-            <p>Breve descrição sobre o segundo dashboard.</p>
+        <div class="slide">
+            <iframe title="Fluxo de Caixa" width="1024" height="650" src="https://app.powerbi.com/view?r=eyJrIjoiMzUzZDM5MzktZjM4Mi00ZTQyLTk0NGMtZDk0MzE5NTc2MmJmIiwidCI6ImFjNTU4MzUwLTJiZTQtNGNmYi1iMWIzLTY2YTQzZGI3YmU1OSJ9" frameborder="0" allowFullScreen="true">
+            </iframe>
+            <div class="description">
+                <h3>Análise de uma Demonstração Financeira</h3>
+                <p>Avaliação movimentos feitos pela empresa e sua saúde financeira ao longo do tempo.</p>
+                <p>✔️ Análise do resultado da empresa ao longo dos anos;</p>
+                <p>✔️ Análise Vertical e horizontal;</p>
+                <p>✔️ Verificação de indicadores de saúde financeira da empresa (Margem de Lucro, ROI);</p>
+                <p>✔️ Análise da composição da Receita e Despesa Total no decorrer do tempo.
+                </p>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiMzUzZDM5MzktZjM4Mi00ZTQyLTk0NGMtZDk0MzE5NTc2MmJmIiwidCI6ImFjNTU4MzUwLTJiZTQtNGNmYi1iMWIzLTY2YTQzZGI3YmU1OSJ9" class="full-screen-button" target="_blank">🔍 Ver em tela cheia</a>
+            </div>
         </div>
-        <div class="dashboard">
-            <h3>Análise Fluxo de Caixa</h3>
-            <iframe title="Fluxo de Caixa" width="1024" height="636" src="https://app.powerbi.com/view?r=eyJrIjoiODkzOTc2YjctMGU1Yi00OWU4LThmOGQtNDk0OGMzZjg2YWE3IiwidCI6ImFjNTU4MzUwLTJiZTQtNGNmYi1iMWIzLTY2YTQzZGI3YmU1OSJ9" frameborder="0" allowFullScreen="true"></iframe>
-            <p>Breve descrição sobre o terceiro dashboard.</p>
+        <div class="slide">
+            <iframe title="Balaço Patrimonial" width="1024" height="650" src="https://app.powerbi.com/view?r=eyJrIjoiNjdkNmRmZTMtYzFlNC00ZmI3LTk5MWQtZDY2NGRkYjAzYjIwIiwidCI6ImFjNTU4MzUwLTJiZTQtNGNmYi1iMWIzLTY2YTQzZGI3YmU1OSJ9" frameborder="0" allowFullScreen="true"></iframe>
+            <div class="description">
+                <h3>Análise do Balanço Patrimonial</h3>
+                <p>Análise da saúde financeira da empresa a partir do Balanço Patrimonial</p>
+                <p>✔️ Verificação de indicadores financeiros como: Capital de Giro, ROA e ROE permitindo aos gestores ou investidores entender como está a saúde financeira da empresa</p>
+                <p>✔️ Análises Verticais e Horizontais de modo que permita identificar tendências, aumentos ou quedas no valores dos itens analisados;</p>
+                <p>✔️ Análise da composição da Receita e Despesa Total no decorrer do tempo.
+                </p>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiNjdkNmRmZTMtYzFlNC00ZmI3LTk5MWQtZDY2NGRkYjAzYjIwIiwidCI6ImFjNTU4MzUwLTJiZTQtNGNmYi1iMWIzLTY2YTQzZGI3YmU1OSJ9" class="full-screen-button" target="_blank">🔍 Ver em tela cheia</a>
+            </div>
         </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>        
     </section>
-    
-    <section class="social-icons">
-        <a href="https://github.com/Istvan-Abner-Varga" target="_blank"><img src="Imagens\github.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/istvan-abner-varga/" target="_blank"><img src="Imagens\linkedin.png" alt="LinkedIn"></a>
-        <a href="mailto:istvan.a.varga@gmail.com"><img src="Imagens\email.png" alt="E-mail"></a>
-    </section>
+   
+    <script src="Script.js"></script> <!-- Link para o JavaScript -->
 </body>
 </html>
