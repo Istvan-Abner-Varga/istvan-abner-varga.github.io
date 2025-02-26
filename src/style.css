@@ -244,9 +244,45 @@ section.portfolio .flex{
 }
 
 .prev-btn {
-    left: 3px;
+    left: 5px;
 }
 
 .next-btn {
-    right: 3px;
+    right: 5px;
+}
+
+@media screen and (max-width:1062px){
+	/*Classes Gerais*/
+	.flex{
+		flex-direction: column;/*o layout fica em modo coluna*/
+	}
+
+	/*Cabeçalho*/
+	.menu-desktop{
+		display: none;
+	}
+
+	/*Slide*/
+	.slider-container{
+		width: 100%;
+	}
+
+	.slide iframe{
+		height: 270px;
+	}
+}
+
+@media	(max-width:825px){
+	.slide-description {
+	    position: static; /* Remove o posicionamento absoluto */
+        opacity: 1; /* Sempre visível */
+        margin-top: 10px; /* Espaçamento entre o slide e a descrição */
+        text-align: justify; /* Centraliza o texto */
+	}
+
+	{
+    .slide-btn {
+        font-size: 30px; /* Reduz o tamanho dos botões */
+        cursor: auto;
+    }
 }
